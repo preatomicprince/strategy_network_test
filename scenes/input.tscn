@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ku2057sptcwk"]
+
+[ext_resource type="Script" path="res://input.gd" id="1_ipjer"]
+
+[node name="Input" type="Node2D"]
+script = ExtResource("1_ipjer")

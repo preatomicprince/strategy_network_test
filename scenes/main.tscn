@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmmvl6672nvv1"]
+
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_7nx0o"]
+
+[node name="Main" type="Node2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_7nx0o")
+
+[node name="Menu" type="VBoxContainer" parent="."]
+offset_left = 1.25
+offset_top = 11.75
+offset_right = 41.25
+offset_bottom = 51.75
+
+[node name="Join" type="Button" parent="Menu"]
+layout_mode = 2
+text = "Join"
+
+[node name="Host" type="Button" parent="Menu"]
+layout_mode = 2
+text = "Host"
+
+[connection signal="pressed" from="Menu/Join" to="." method="_on_join_pressed"]
+[connection signal="pressed" from="Menu/Host" to="." method="_on_host_pressed"]
